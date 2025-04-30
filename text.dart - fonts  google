@@ -1,0 +1,33 @@
+import 'package:flutter/material.dart';
+
+class TextWidget extends StatelessWidget {
+  const TextWidget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('Tutorial Text'),
+      ),
+      body: Container(
+        width: double.infinity,
+        child: Text(
+          "Ini tutorial text di rakryan, kita tes penggunaan maxlines dan"
+          " overflow dengan memperbanyak text agar lebih dari 1 baris.",
+          style: TextStyle(
+            fontFamily: "ComicRelief",
+            fontSize: 20,
+            fontWeight: FontWeight.bold,
+            fontStyle: FontStyle.italic,
+            letterSpacing: 2.0,
+            wordSpacing: 5.0,
+            color: const Color.fromARGB(255, 255, 127, 170),
+          ),
+          textAlign: TextAlign.center,
+          maxLines: 2,
+          overflow: TextOverflow.ellipsis,
+        ),
+      )
+    );
+  }
+}
