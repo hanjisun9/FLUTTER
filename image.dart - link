@@ -1,0 +1,18 @@
+import 'package:flutter/material.dart';
+
+class ImageWidget extends StatelessWidget {
+  const ImageWidget ({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text ("Image Widget"),
+      ),
+      body: Container(
+        color: const Color.fromARGB(255, 249, 123, 161),
+        child: Image.network(
+          'https://img4.daumcdn.net/thumb/R658x0.q70/?fname=https://t1.daumcdn.net/news/202101/08/SPORTSSEOUL/20210108101122680edos.jpg')),
+    );
+  }
+}
