@@ -1,0 +1,6 @@
+fonts:
+  - family: ComicRelief
+    fonts:
+     - asset: assets/fonts/ComicRelief-Regular.ttf
+     - asset: assets/fonts/ComicRelief-Bold.ttf
+       style: italic
