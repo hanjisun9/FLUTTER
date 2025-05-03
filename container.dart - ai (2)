@@ -1,0 +1,56 @@
+import 'package:flutter/material.dart';
+ 
+ class ContainerWidget extends StatelessWidget{
+   const ContainerWidget({super.key});
+ 
+   @override
+   Widget build(BuildContext context) {
+    return Scaffold(
+      backgroundColor: Colors.teal[50],
+      body: Center(
+        child: Container(
+          width: 350,
+          margin: const EdgeInsets.all(20),
+          padding: const EdgeInsets.all(25),
+          decoration: BoxDecoration(
+            borderRadius: BorderRadius.circular(20),
+            gradient: const LinearGradient(
+              colors: [Colors.teal, Colors.blueGrey],
+              begin: Alignment.topLeft,
+              end: Alignment.bottomRight,
+           ),
+           boxShadow: const [
+            BoxShadow(
+              color: Colors.black38,
+              blurRadius: 6,
+              offset: Offset(0, 6),
+            ),
+           ],
+          ),
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
+            children: const [
+              Icon(
+                Icons.ramen_dining,
+                color: Colors.white,
+                size: 50,
+              ),
+              SizedBox(height: 15),
+              Text(
+                '🍣 Ini dibungkus seperti sushi!',
+                style: TextStyle(
+                  color: Colors.white,
+                  fontSize: 18,
+                  fontFamily: 'ComicRelief',
+                  fontWeight: FontWeight.w600,
+                  letterSpacing: 1,
+                ),
+                textAlign: TextAlign.center,
+              ),
+            ],
+          ),
+        ),
+      ),
+    );
+   }
+ }
