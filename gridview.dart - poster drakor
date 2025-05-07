@@ -1,0 +1,68 @@
+import 'package:flutter/material.dart';
+
+class GridViewWidget extends StatelessWidget {
+  const GridViewWidget({super.key});
+
+  @override
+  Widget build (BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text ("c'mon, c'mon, c'mon"),
+        backgroundColor: const Color.fromARGB(255, 224, 127, 159),
+        centerTitle: true,
+      ),
+      body: GridView(
+        gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+          crossAxisCount: 2,
+          crossAxisSpacing: 10.0,
+          mainAxisSpacing: 10.0,
+          childAspectRatio: 1,
+        ),
+      children: [
+       AspectRatio(
+          aspectRatio: 1.5,
+          child: Image.network(
+            'https://akcdn.detik.net.id/visual/2024/09/06/family-by-choice_34.jpeg?w=480&q=90',
+            fit: BoxFit.contain,
+          ),
+        ),
+        AspectRatio(
+          aspectRatio: 1.5,
+          child: Image.network(
+            'https://upload.wikimedia.org/wikipedia/id/0/05/My_Demon.jpg',
+            fit: BoxFit.contain,
+          ),
+        ),
+        AspectRatio(
+          aspectRatio: 1.5,
+          child: Image.network(
+          'https://m.media-amazon.com/images/M/MV5BZmQwNDU5MTYtNTdiMS00YjYyLTk0NDktODNkOWVjY2NmZWRmXkEyXkFqcGc@._V1_.jpg',
+          fit:BoxFit.contain,
+          ),
+        ),
+        AspectRatio(
+          aspectRatio: 1.5,
+          child: Image.network(
+            'https://akcdn.detik.net.id/community/media/visual/2023/09/21/poster-drama-twinkling-watermelon-foto-xcomcjndrama.jpeg?w=620&q=90',
+            fit: BoxFit.contain,
+          ),
+        ),
+        AspectRatio(
+          aspectRatio: 1.5,
+          child: Image.network(
+            'https://awsimages.detik.net.id/community/media/visual/2021/01/22/poster-vincenzo-song-joong-ki.jpeg?w=1400',
+            fit: BoxFit.contain,
+          ),
+        ),
+        AspectRatio(
+          aspectRatio: 1.5,
+          child: Image.network(
+            'https://awsimages.detik.net.id/community/media/visual/2025/01/23/when-life-gives-you-tangerines-1.jpeg?w=700&q=90',
+            fit: BoxFit.contain,
+          ),
+        ),
+      ],
+     ),
+    );
+  }
+}
