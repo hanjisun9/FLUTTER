@@ -1,0 +1,44 @@
+import 'package:flutter/material.dart';
+
+class ColumnRowWidget extends StatelessWidget {
+  const ColumnRowWidget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: Center(
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: [
+            
+            Image.network(
+              'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQC4p0EdIE1MVxf3bIiD2TpValY-oHj3jLDQ&s', 
+              width: 200,
+              height: 200,
+              fit: BoxFit.cover,
+            ),
+            const SizedBox(width: 16),
+            
+            const Text(
+              '✦ Racket Boys ✦',
+              style: TextStyle(
+                fontSize: 24,
+                fontWeight: FontWeight.bold,
+                fontStyle: FontStyle.italic,
+                color: Colors.deepPurple,
+                shadows: [
+                  Shadow(
+                    offset: Offset(2, 2),
+                    blurRadius: 4,
+                    color: Colors.grey,
+                  ),
+                ],
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}
