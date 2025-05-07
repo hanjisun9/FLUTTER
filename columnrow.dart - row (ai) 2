@@ -1,0 +1,74 @@
+import 'package:flutter/material.dart';
+
+class ColumnRowWidget extends StatelessWidget {
+  const ColumnRowWidget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      backgroundColor: Colors.white,
+      body: Center(
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            
+            ClipRRect(
+              borderRadius: BorderRadius.circular(16),
+              child: Image.network(
+                'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQC4p0EdIE1MVxf3bIiD2TpValY-oHj3jLDQ&s',
+                width: 200,
+                height: 200,
+                fit: BoxFit.cover,
+              ),
+            ),
+            const SizedBox(width: 24),
+
+            Wrap(
+              direction: Axis.vertical,
+              spacing: 12,
+              crossAxisAlignment: WrapCrossAlignment.start,
+              children: [
+                const Text(
+                  '✦ Racket Boys ✦',
+                  style: TextStyle(
+                    fontSize: 26,
+                    fontWeight: FontWeight.bold,
+                    fontStyle: FontStyle.italic,
+                    color: Colors.deepPurple,
+                  ),
+                ),
+                const SizedBox(
+                  width: 250,
+                  child: Text(
+                    'Drama yang bikin gamon banget. Wajib tonton!',
+                    style: TextStyle(
+                      fontSize: 14,
+                      color: Colors.black87,
+                    ),
+                  ),
+                ),
+                ElevatedButton.icon(
+                  onPressed: () {
+                    ScaffoldMessenger.of(context).showSnackBar(
+                      const SnackBar(content: Text('Memutar Racket Boys...')),
+                    );
+                  },
+                  icon: const Icon(Icons.play_arrow),
+                  label: const Text('Tonton Sekarang'),
+                  style: ElevatedButton.styleFrom(
+                    backgroundColor: Colors.deepPurple,
+                    foregroundColor: Colors.white,
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(12),
+                    ),
+                  ),
+                ),
+              ],
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}
+
