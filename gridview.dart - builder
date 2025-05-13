@@ -1,0 +1,35 @@
+import 'package:flutter/material.dart';
+
+class GridViewWidget extends StatelessWidget {
+  const GridViewWidget({super.key});
+
+  @override
+  Widget build (BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text ('nana'),
+        backgroundColor: Colors.pinkAccent,
+      ),
+      body: GridView.builder(
+        gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+          crossAxisCount: 2,
+          crossAxisSpacing: 10,
+          mainAxisSpacing: 10,
+          childAspectRatio: 1.6,
+        ),
+        itemCount: 9,
+        itemBuilder: (context, index) {
+          return Container(
+            color: const Color.fromARGB(255, 127, 216, 130),
+            child: Center(
+              child: Text(
+                'Item $index',
+                style: TextStyle(color: Colors.white, fontSize: 20),
+              ),
+            ),
+          );
+        },
+      ),
+    );
+  }
+}   
