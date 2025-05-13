@@ -1,0 +1,197 @@
+import 'package:flutter/material.dart';
+
+class GridViewWidget extends StatelessWidget {
+  const GridViewWidget({super.key});
+
+  @override
+  Widget build (BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text ('nana'),
+        backgroundColor: Colors.pinkAccent,
+      ),
+      body: GridView(
+        gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+          crossAxisCount: 3,
+          crossAxisSpacing: 16,
+          mainAxisSpacing: 20,
+        ),
+        scrollDirection: Axis.horizontal,
+       // physics: NeverScrollableScrollPhysics(),
+      children: [
+        AspectRatio(
+         aspectRatio: 1.5,
+          child: Image.network(
+          'https://64.media.tumblr.com/aea97d7e97bee57ccbc3f1f401faa544/83ee917bafddceee-db/s640x960/999da6327a501cdddd87b0105ebb3562fb059fca.jpg',
+            fit: BoxFit.cover,
+          ),
+        ),
+        AspectRatio(
+          aspectRatio: 1.5,
+          child: Image.network(
+          'https://64.media.tumblr.com/e44a2e613036024f5490ecc1220c2555/d3cef5362ac555cc-7b/s400x600/34e52cbe2a057b8d1a64744e238d42202c2d1fbf.jpg',
+            fit: BoxFit.cover,
+          ),
+        ),
+        AspectRatio(
+          aspectRatio: 1.5,
+        child: Image.network(
+          'https://64.media.tumblr.com/c37e3fe7a7495f5c40dce17cc23fd784/83ee917bafddceee-36/s540x810/a54be5f5445521c914ea4169b6af9bbf577e72f3.jpg',
+            fit: BoxFit.cover,
+          ),
+        ),
+        AspectRatio(
+          aspectRatio: 1.5,
+          child: Image.network(
+            'https://64.media.tumblr.com/39221b9c320edba901ff79e7f311acf1/1fb4afb7d3c4f0ed-45/s640x960/676d7336be6cb920d82cc8f0eb14a7824af53c38.pnj',
+              fit: BoxFit.cover,
+          ),
+        ),
+        AspectRatio(
+          aspectRatio: 1.5,
+          child: Image.network(
+            'https://64.media.tumblr.com/bd6a585ca1317332dd2747b7f4e31de3/83ee917bafddceee-95/s540x810/4d98841cb9288b50c1de76edd773692445ef5361.jpg',
+              fit: BoxFit.cover,
+          ),
+        ),
+        AspectRatio(
+          aspectRatio: 1.5,
+          child: Image.network(
+            'https://64.media.tumblr.com/0bef674d877ca9176491d8264bf6190a/tumblr_pif7on3oo51w1zmya_250.jpg',
+              fit: BoxFit.cover,
+          ),
+        ),
+        //--------------------------------------------------------------------------------------------------------------------------------------------
+        AspectRatio(
+         aspectRatio: 1.5,
+          child: Image.network(
+          'https://64.media.tumblr.com/aea97d7e97bee57ccbc3f1f401faa544/83ee917bafddceee-db/s640x960/999da6327a501cdddd87b0105ebb3562fb059fca.jpg',
+            fit: BoxFit.cover,
+          ),
+        ),
+        AspectRatio(
+          aspectRatio: 1.5,
+          child: Image.network(
+          'https://64.media.tumblr.com/e44a2e613036024f5490ecc1220c2555/d3cef5362ac555cc-7b/s400x600/34e52cbe2a057b8d1a64744e238d42202c2d1fbf.jpg',
+            fit: BoxFit.cover,
+          ),
+        ),
+        AspectRatio(
+          aspectRatio: 1.5,
+        child: Image.network(
+          'https://64.media.tumblr.com/c37e3fe7a7495f5c40dce17cc23fd784/83ee917bafddceee-36/s540x810/a54be5f5445521c914ea4169b6af9bbf577e72f3.jpg',
+            fit: BoxFit.cover,
+          ),
+        ),
+        AspectRatio(
+          aspectRatio: 1.5,
+          child: Image.network(
+            'https://64.media.tumblr.com/39221b9c320edba901ff79e7f311acf1/1fb4afb7d3c4f0ed-45/s640x960/676d7336be6cb920d82cc8f0eb14a7824af53c38.pnj',
+              fit: BoxFit.cover,
+          ),
+        ),
+        AspectRatio(
+          aspectRatio: 1.5,
+          child: Image.network(
+            'https://64.media.tumblr.com/bd6a585ca1317332dd2747b7f4e31de3/83ee917bafddceee-95/s540x810/4d98841cb9288b50c1de76edd773692445ef5361.jpg',
+              fit: BoxFit.cover,
+          ),
+        ),
+        AspectRatio(
+          aspectRatio: 1.5,
+          child: Image.network(
+            'https://64.media.tumblr.com/0bef674d877ca9176491d8264bf6190a/tumblr_pif7on3oo51w1zmya_250.jpg',
+              fit: BoxFit.cover,
+          ),
+        ),
+// ----------------------------------------------------------------------------------------------------------------------------------------------------------------
+        AspectRatio(
+         aspectRatio: 1.5,
+          child: Image.network(
+          'https://64.media.tumblr.com/aea97d7e97bee57ccbc3f1f401faa544/83ee917bafddceee-db/s640x960/999da6327a501cdddd87b0105ebb3562fb059fca.jpg',
+            fit: BoxFit.cover,
+          ),
+        ),
+        AspectRatio(
+          aspectRatio: 1.5,
+          child: Image.network(
+          'https://64.media.tumblr.com/e44a2e613036024f5490ecc1220c2555/d3cef5362ac555cc-7b/s400x600/34e52cbe2a057b8d1a64744e238d42202c2d1fbf.jpg',
+            fit: BoxFit.cover,
+          ),
+        ),
+        AspectRatio(
+          aspectRatio: 1.5,
+        child: Image.network(
+          'https://64.media.tumblr.com/c37e3fe7a7495f5c40dce17cc23fd784/83ee917bafddceee-36/s540x810/a54be5f5445521c914ea4169b6af9bbf577e72f3.jpg',
+            fit: BoxFit.cover,
+          ),
+        ),
+        AspectRatio(
+          aspectRatio: 1.5,
+          child: Image.network(
+            'https://64.media.tumblr.com/39221b9c320edba901ff79e7f311acf1/1fb4afb7d3c4f0ed-45/s640x960/676d7336be6cb920d82cc8f0eb14a7824af53c38.pnj',
+              fit: BoxFit.cover,
+          ),
+        ),
+        AspectRatio(
+          aspectRatio: 1.5,
+          child: Image.network(
+            'https://64.media.tumblr.com/bd6a585ca1317332dd2747b7f4e31de3/83ee917bafddceee-95/s540x810/4d98841cb9288b50c1de76edd773692445ef5361.jpg',
+              fit: BoxFit.cover,
+          ),
+        ),
+        AspectRatio(
+          aspectRatio: 1.5,
+          child: Image.network(
+            'https://64.media.tumblr.com/0bef674d877ca9176491d8264bf6190a/tumblr_pif7on3oo51w1zmya_250.jpg',
+              fit: BoxFit.cover,
+          ),
+        ),
+      //----------------------------------------------------------------------------------------------------------------------------------------------------
+        AspectRatio(
+         aspectRatio: 1.5,
+          child: Image.network(
+          'https://64.media.tumblr.com/aea97d7e97bee57ccbc3f1f401faa544/83ee917bafddceee-db/s640x960/999da6327a501cdddd87b0105ebb3562fb059fca.jpg',
+            fit: BoxFit.cover,
+          ),
+        ),
+        AspectRatio(
+          aspectRatio: 1.5,
+          child: Image.network(
+          'https://64.media.tumblr.com/e44a2e613036024f5490ecc1220c2555/d3cef5362ac555cc-7b/s400x600/34e52cbe2a057b8d1a64744e238d42202c2d1fbf.jpg',
+            fit: BoxFit.cover,
+          ),
+        ),
+        AspectRatio(
+          aspectRatio: 1.5,
+        child: Image.network(
+          'https://64.media.tumblr.com/c37e3fe7a7495f5c40dce17cc23fd784/83ee917bafddceee-36/s540x810/a54be5f5445521c914ea4169b6af9bbf577e72f3.jpg',
+            fit: BoxFit.cover,
+          ),
+        ),
+        AspectRatio(
+          aspectRatio: 1.5,
+          child: Image.network(
+            'https://64.media.tumblr.com/39221b9c320edba901ff79e7f311acf1/1fb4afb7d3c4f0ed-45/s640x960/676d7336be6cb920d82cc8f0eb14a7824af53c38.pnj',
+              fit: BoxFit.cover,
+          ),
+        ),
+        AspectRatio(
+          aspectRatio: 1.5,
+          child: Image.network(
+            'https://64.media.tumblr.com/bd6a585ca1317332dd2747b7f4e31de3/83ee917bafddceee-95/s540x810/4d98841cb9288b50c1de76edd773692445ef5361.jpg',
+              fit: BoxFit.cover,
+          ),
+        ),
+        AspectRatio(
+          aspectRatio: 1.5,
+          child: Image.network(
+            'https://64.media.tumblr.com/0bef674d877ca9176491d8264bf6190a/tumblr_pif7on3oo51w1zmya_250.jpg',
+              fit: BoxFit.cover,
+          ),
+        ),
+      ],
+     ),
+    );
+  }
+}
