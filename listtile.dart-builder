@@ -1,0 +1,80 @@
+import 'package:flutter/material.dart';
+
+class ListTileWidget extends StatefulWidget {
+    const ListTileWidget({super.key});
+
+  @override
+  State<ListTileWidget> createState() => _ListTileWidgetState();
+}
+
+class _ListTileWidgetState extends State<ListTileWidget> {
+    //bool _isTaskDone = false;
+    //bool _isNotificationOn = false;
+    final List<String> names = ['Jaemin', 'Jeno', 'Haechan', 'Mark', 'Renjun', 'Jisung', 'Chenle'];
+    @override
+    Widget build(BuildContext context) {
+        return Scaffold(
+            body: ListView.builder(
+                itemCount: names.length,
+                itemBuilder: (context, index) {
+                    return ListTile(
+                        leading: Icon(Icons.account_circle),
+                        title: Text(names[index]),
+                        subtitle: Text('Pengguna ke-${index +1}'),
+                        trailing: Icon(Icons.arrow_forward),
+                        onTap: () {
+                            print('${names[index]} diklik');
+                        },
+                    );
+                },
+            ),
+          //  body: ListView(
+              //  children: [
+               //     ListTile(
+                //leading: Icon(Icons.account_circle),
+                //title: Text('Haechan'),
+                //subtitle: Text('Online'),
+                //trailing: Icon(Icons.message),
+                //onTap: () {
+                  //  print('haechan diklik');
+                    //    },
+                   // ),
+                    //Divider(),
+                    //ListTile(
+                      //  leading: Icon(Icons.account_circle),
+                        //title: Text('Mark'),
+                        //subtitle: Text('Online'),
+                        //trailing: Icon(Icons.message),
+                        //onTap: () {
+                         //   print('Mark diklik');
+                       // },
+                  //  ),
+                 // ListTile(
+                  //  leading: Icon(Icons.task),
+                   // title: Text ('Tugas Selesai'),
+                  //  trailing: Checkbox(
+                   //     value: true, 
+                   //     onChanged: (bool? value) {
+                    //        setState(() {
+                   //           _isTaskDone = value ?? false;
+                    //        });
+                    //    },
+                   // ),
+                //  ),
+               //   ListTile(
+                //    leading: Icon(Icons.notifications),
+               //     title: Text('Notifikasi'),
+                //    trailing: Switch(
+                //        value: _isNotificationOn, 
+                 //       onChanged: (bool value) {
+                //            setState(() {
+                 //             _isNotificationOn = value;
+                 //           });
+                 //       },
+                 //   ),
+                 // )
+            //    ],
+          //  ),
+        );
+    }
+}
